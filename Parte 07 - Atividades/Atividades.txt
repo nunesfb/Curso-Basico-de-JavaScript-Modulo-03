@@ -1,0 +1,17 @@
+1) Crie duas variáveis chamadas nome e salário usando var. Atribua um valor para cada. Imprima estes valores usando template literals. Use o let e adicione novamente estas variáveis (dentro de chaves) com outros valores e imprima usando template literals. Após isso, imprima novamente estas variáveis usando template literals. 
+
+2) Crie um array que tenha 7 carros diferentes usando const e imprima. Remova um elemento ao final. Adicione um novo elemento ao final. Mude o valor do terceiro elemento do array.
+
+3) Crie uma função que realize a soma de dois números de forma tradicional. Imprima o resultado de uma soma. Após, aplique os conceitos de Arrow Function e imprima o resultado da mesma soma.
+
+4) Crie uma classe chamada Pessoa que tenha as propriedades: nome e e-mail. Crie um método chamado Consultar Cadastro que retorne os dados das pessoas. Imprima o resultado deste método. Crie uma classe filha chamada Pessoa Física que tenha os atributos da classe pai e o atributo cpf. Crie um metodo chamado Consulta CPF que retorne os dados da Pessoa Física. Imprima o resultado deste método. Use os Set para mudar o valor do cpf. Imprima somente o CPF usando Get.
+
+5) Faça as seguintes tarefas:
+
+a) Crie um array com 10 números diferentes. Use o método map para subtrair 10 de cada um destes números. Imprima o resultado final.
+
+b) Crie um array com 5 números diferentes. Verifique todos os pares usando o método Filter. Imprima o resultado final.
+
+c) Crie um array com 3 números diferentes. Verifique se todos estão acima de 20 usando o método Every. Imprima o resultado final.
+
+d) Use o mesmo array anterior. Verifique se existe algum acima de 20 usando o método Some. Imprima o resultado final.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //precisamos definir na const seu valor quando declaramos
+        const PI = 3.141592;
+        //console.log(PI);
+        //não posso mudar o valor da const aqui
+        //PI = 3.14;
+        //console.log(PI);
+
+        //aqui estamos vendo a nota em escopos diferentes
+        var nota = 10;
+        console.log(nota)
+        {
+            const nota = 8;
+            console.log(nota)
+        }
+
+        //podemos criar um array com const
+        const frutas = ["Uva", "Melancia", "Mamao"];
+        console.log(frutas);
+        
+        //nao posso definir novamente isso com const
+        frutas = ["Laranja", "Melancia", "Mamao"];
+
+        //posso trocar o valor
+        frutas[0] = "Laranja";
+        console.log(frutas);
+        
+        //posso adicionar um novo valor
+        frutas.push("Maca");
+        console.log(frutas);
+
+    </script>
+</body>
+
+</html>

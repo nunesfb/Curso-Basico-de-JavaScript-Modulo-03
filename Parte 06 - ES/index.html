@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //TEMPLATE LITERALS
+        //incluir variaveis dentro de strings no JS a partir do ES6+
+        /*
+        const nome = "Felipe";
+        const funcao = "Professor";
+        
+        console.log(nome + ", seu cargo na empresa é " + funcao);
+        //vamos melhorar essa impressao
+        console.log(`${nome}, seu cargo na empresa é ${funcao}`);
+        */
+
+
+	   //desestruturacao
+       const usuario = {
+            nome: 'Felipe',
+            idade: 29,
+            endereco: {
+                cidade: 'SM',
+                estado: 'RS',
+            },
+        };
+
+        console.log(usuario);
+
+        //vamos pegar agora o nome e idade
+        //2 linhas em diante para fazer isso
+        //const nome = usuario.nome;
+        //const idade = usuario.idade;
+        //console.log(nome);
+        //console.log(idade);
+
+        //desestruturacao
+        const { nome, idade, endereco: { cidade } } = usuario;
+        console.log(nome);
+        console.log(idade);
+        console.log(cidade);       
+
+    </script>
+</body>
+
+</html>

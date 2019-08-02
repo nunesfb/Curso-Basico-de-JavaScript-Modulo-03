@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var nome = "Felipe";
+
+        function Imprime() {
+            var idade = 29;
+            console.log(nome);
+            console.log(idade);
+        }
+
+        Imprime();
+        //a variavel nome é global 
+        console.log(nome);
+        //a variavel idade é local
+        //console.log(idade);
+
+
+        //vamos ver como usar o let
+        //nao posso usar assim o let
+        {
+            let salario = 1502;
+        }
+        //console.log(salario);
+
+        //sem let
+        var altura = 1.91;
+        console.log(altura);
+        {
+            var altura = 1.95;
+            console.log(altura);
+        }
+        console.log(altura);
+
+        //com let
+        var peso = 80.52;
+        console.log(peso);
+        {
+            let peso = 78.52;
+            console.log(peso);
+        }
+        console.log(peso);
+
+    </script>
+
+</body>
+
+</html>

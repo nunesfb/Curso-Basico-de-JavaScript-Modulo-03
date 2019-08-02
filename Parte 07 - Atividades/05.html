@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 5a
+        const numeros = [12, 13, 65, 4230, 450, 5353, 864, 24, 665, 242];
+        const numerosSubtraidos = numeros.map(function (item, index) {
+            return item - 10;
+
+        });
+        console.log(numerosSubtraidos);
+
+
+        // 5b
+        const pares = [10, 20, 321, 40, 501];
+        const numerosPares = pares.filter(function (item) {
+            return item % 2 === 0;
+        });
+        console.log(numerosPares);
+
+        // 5c
+        const numerosDiversos = [20, 13, 27];
+        var resultados = numerosDiversos.every(verificaNums);
+
+        function verificaNums(value) {
+            return value > 20;
+        }
+        console.log(resultados);
+
+
+        // 5d
+        var resultadosNew = numerosDiversos.some(verificaNums);
+        console.log(resultadosNew);
+
+    </script>
+
+</body>
+
+</html>

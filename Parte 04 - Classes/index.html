@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <script>
+    pessoa = new Pessoa("Felipe", 29);
+
+    console.log(pessoa.nome);
+    console.log(pessoa.idade);
+
+    console.log(pessoa.andar());
+    console.log(pessoa.correr(20));
+
+    //metodo estatico
+    //console.log(pessoa.ImprimeFrase());
+    console.log(Pessoa.ImprimeFrase());
+    console.log(Pessoa.ImprimeFraseNome(pessoa));
+
+    //usando herança na classe
+    cargo = new Cargo("Felipe", 29, "Professor");
+    console.log(cargo.Imprime());
+
+    //getters and setters
+    //nao usamos parenteses na chamada do get e set
+    funcionario = new Funcionario("Felipe");
+    console.log(funcionario.GetNome);
+
+    funcionario.SetNome = "Maria";
+    console.log(funcionario.GetNome);
+    
+    </script>
+</body>
+</html>

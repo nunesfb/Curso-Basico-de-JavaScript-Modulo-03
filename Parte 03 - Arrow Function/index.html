@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+	//Uma expressão arrow function possui uma sintaxe mais curta quando 
+	//comparada a uma expressão de função (function expression)
+        //sem usar arrow function
+        var imprime = function () {
+            return "nao usei arrow function";
+        }
+        console.log(imprime());
+
+        //com arrow function
+        //remove a palavra function
+        //adiciona =>
+        var imprime = () => {
+            return "usei arrow function";
+        }
+        console.log(imprime());
+
+        //com arrow function e tem somente uma declaracao com retorno de valor
+        //remove as chaves 
+        //remove o return
+        var imprime = () => "usei arrow function";
+        console.log(imprime());
+
+        //com arrow function e tem parametro
+        var imprime = nome => "usei arrow function com o nome " + nome;
+        console.log(imprime("felipe"));
+
+        //com arrow function e tem 2 parametros com parenteses
+        var imprime = (nome, idade) => "usei arrow function com o nome " + nome + " e idade " + idade;
+        console.log(imprime("felipe", 29));
+
+        //com arrow function e tem 2 parametros com parenteses
+        var imprime = (nome, idade) => {
+            console.log(nome);
+            console.log(idade);
+        }
+        imprime("felipe", 29);
+       
+
+    </script>
+</body>
+
+</html>

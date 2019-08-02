@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // o mesmo ocorre se fosse let e let ou var e var
+        // isso se estiverem dentro do mesmo escopo
+        var nome = "Felipe";
+        //let nome = "Joao";
+
+        {
+            var idade = 24;
+            //let idade = 25;
+        }
+
+        // nesse caso, sao escopos diferentes, aí é possível
+        let salario = 2452;
+        console.log(salario);
+        {
+            let salario = 3322;
+            console.log(salario);
+        }
+
+        {
+            let salario = 4535;
+            console.log(salario);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
